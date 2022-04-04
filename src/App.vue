@@ -92,7 +92,7 @@ export default {
 
 @media screen and (max-width: 1000px) {
   .App {
-    margin-top: 30px;
+    margin-top: 20px;
   }
 }
 @media screen and (max-width: 650px) {

@@ -6,7 +6,7 @@
       <p class="beer__brand beer__item">{{beerBrand}}</p>
       <p class="beer__name beer__item">{{beerName}}</p>
       <p class="beer__grade beer__item">{{alcohol}}</p>
-      <button class="beer__button" @click="getBear">хочу другое</button>
+      <button class="beer__button" @click="getBear">давайте другое!</button>
     </div>
   </div>
 </template>
@@ -19,8 +19,9 @@ export default {
 </script>
 <style scoped>
 .beer {
-  padding: 20px;
+  padding: 10px 20px;
   display: flex;
+  margin-bottom: 20px;
 }
 .beer__img {
   width: 300px;
@@ -32,6 +33,7 @@ export default {
   padding: 15px;
   margin-top: 50px;
   border: 1px solid #c2c2c2;
+  border-radius: 10px;
 }
 .beer__title {
   font-size: 26px;
@@ -58,15 +60,21 @@ export default {
   border: 1px solid #c2c2c2;
   outline: none;
   background-color: transparent;
-  border-radius: 10%;
+  border-radius: 10px;
   padding: 5px;
-  margin: 10px 0 0 15px;
+  margin-top: 30px;
   cursor: pointer;
+  width: 100%;
+  font-size: 26px;
 }
-@media screen and (max-width: 1000px) {
+.beer__button:hover {
+  border: 1px solid #a8d8ff;
+}
+@media screen and (max-width: 1024px) {
   .beer__img {
     width: 200px;
     height: 300px;
+    margin-top: 20px;
   }
   .beer__item {
     margin-left: 0;
@@ -80,6 +88,9 @@ export default {
   .beer__button {
     margin-left: 0;
   }
+  .beer__info {
+    margin-top: 20px;
+  }
 }
 @media screen and (max-width: 650px) {
   .beer__img {
@@ -91,6 +102,10 @@ export default {
   .beer__item {
     font-size: 18px;
     margin-top: 20px;
+  }
+  .beer__button {
+    margin-bottom: 10px;
+    font-size: 18px;
   }
 
 }
