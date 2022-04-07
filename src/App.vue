@@ -47,16 +47,7 @@ export default {
       .catch((e) => {
         console.log(e)
       })
-    axios 
-      .get('https://random-data-api.com/api/beer/random_beer')
-      .then((response) => {
-        this.beerName = response.data.name
-        this.beerBrand = response.data.brand
-        this.alcohol = response.data.alcohol
-      })
-      .catch((e) => {
-        console.log(e)
-      })
+    this.getBear()
   },
   methods: {
     async getBear() {
