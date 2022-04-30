@@ -1,5 +1,5 @@
 # umnikitest
-
+deploy https://arklit.github.io/umnikitest/
 ## Usage
 npm run serve чтобы запустить dev сервер
 ## What i do
